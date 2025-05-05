@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Online Store Catalogue</title>
+</head>
+
+<body>
+    <header>
+        <h1>Online Store Catalogue</h1>
+    </header>
+
+    <div class="filter">
+        <label for="category">Filter by category: </label>
+        <select id="category" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+        </select>        
+    </div>
+
+    <div class="catalogue" id="catalogue">
+        <div class="product" data-category="electronics">
+            <img src="https://placehold.co/200x150?text=Phone" alt="Phone">
+            <h3>Smartphone</h3>
+            <p>$399</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <img src="https://placehold.co/200x150?text=Jacket" alt="Jacket">
+            <h3>Winter Jacket</h3>
+            <p>$89</p>
+        </div>
+        <div class="product" data-category="books">
+            <img src="https://placehold.co/200x150?text=Book" alt="Book">
+            <h3>Science Fiction Novel</h3>
+            <p>$15</p>
+        </div>
+        <div class="product" data-category="electronics">
+            <img src="https://placehold.co/200x150?text=Laptop" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>$999</p>
+        </div>
+        <div class="product" data-category="clothing">
+            <img src="https://placehold.co/200x150?text=Shoes" alt="Shoes">
+            <h3>Running Shoes</h3>
+            <p>$49</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
